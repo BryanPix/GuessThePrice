@@ -14,12 +14,13 @@ let selectedPrice= Math.floor(Math.random() * 101);
 let numberOfAttempts = 9;
 let restart = document.getElementById("restart");
 let gameContainer = document.getElementById('gameContainer');
-
-
+let welcome = document.getElementById("Welcome");
+let pentakill = document.getElementById("Pentakill");
   // Se montre quand la page se charge
   window.onload = function () {
     let popup = document.querySelector('.popup');
     popup.style.display = 'block';
+    welcome.play();
     //masque la card jusqu'a cliquer sur "Commencer"
     gameContainer.style.visibility ='hidden';
 }
@@ -52,6 +53,7 @@ function checkGuess() {
     if (playerGuess === selectedPrice) {
         result.textContent = "Félicitations!";
         restart.style.visibility = 'visible';
+        pentakill.play();
     } else {
         remainingAttempts.textContent = "Vous avez " + numberOfAttempts + " chances pour deviner le prix exact.";
 
