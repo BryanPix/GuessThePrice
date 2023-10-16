@@ -1,9 +1,9 @@
 const ImageNom = [
-    {image: "/img/SpongeBob.png", nom :"Bob l'éponge"},
-    {image: "/img/NicoRobinFigurine.png", nom :"Nico Robin"},
-    {image: "/img/SSBUGame.png", nom :"SuperSmashBros Ultimate"},
-    {image: "/img/ManetteGameCube.png", nom :"Manette GameCube"},
-    {image: "/img/TomeBatmanDamned.jpg", nom :"Tome Batman Damned"},
+    {image: "./img/SpongeBob.png", nom :"Bob l'éponge"},
+    {image: "./img/NicoRobinFigurine.png", nom :"Nico Robin"},
+    {image: "./img/SSBUGame.png", nom :"SuperSmashBros Ultimate"},
+    {image: "./img/ManetteGameCube.png", nom :"Manette GameCube"},
+    {image: "./img/TomeBatmanDamned.jpg", nom :"Tome Batman Damned"},
 ];
 let commencer = document.getElementById("startButton");
 let remainingAttempts = document.getElementById("remainingAttempts");
@@ -11,7 +11,7 @@ let guessInput = document.getElementById("guessInput");
 let guessButton = document.getElementById("guessButton");
 let result = document.getElementById("result");
 let selectedPrice= Math.floor(Math.random() * 101);
-let numberOfAttempts = 10;
+let numberOfAttempts = 9;
 let restart = document.getElementById("restart");
 let gameContainer = document.getElementById('gameContainer');
 
